@@ -53,8 +53,8 @@
   require.define('/tools/entry-point.js', function (module, exports, __dirname, __filename) {
     (function () {
       'use strict';
-      global.escodegen = require('/escodegen.js', module);
-      escodegen.browser = true;
+      global.exports = require('/escodegen.js', module);
+      global.exports.browser = true;
     }());
   });
   require.define('/escodegen.js', function (module, exports, __dirname, __filename) {
@@ -3861,4 +3861,4 @@
     }));
   });
   require('/tools/entry-point.js');
-}.call(this, this));
+}.call(module, module));
