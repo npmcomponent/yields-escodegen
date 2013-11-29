@@ -1,0 +1,7 @@
+{
+  "name": "escodegen",
+  "repo": "yields/escodegen",
+  "version": "0.0.0",
+  "scripts": ["escodegen.browser.js"],
+  "main": "escodegen.browser.js"
+}
